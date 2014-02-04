@@ -39,7 +39,24 @@ They are cross platform. Your instructor will use the above two.
 
 Mac OS X binary come with decent code editor. Windows version, well... it has a code editor but you know...
 
-## Some recommended external R packages
+## Required external R packages
 
 1. plyr
-2. 
+2. plyr
+3. plyr
+
+### Cool, but how can I install a package.
+
+Inside R
+
+```{r}
+install.packages("plyr")
+```
+
+### And how to use it?
+
+```{r}
+require(plyr)
+# or library(plyr)
+```
+
