@@ -8,7 +8,7 @@ those who are interested in data analysis but with very little experience in R.
 
 1. how to work with the most important R data structures: vector and data frame
 2. how to get data into R from common sources such as csv files
-3. master the of SAC (split-apply-combine) strategy to work with data
+3. master the SAC (split-apply-combine) strategy to work with data
 4. basic of data viz
 
 ## This course will not teach you
