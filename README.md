@@ -30,10 +30,16 @@ I can only provide you with [this link](http://cran.rstudio.com/bin/windows/), l
 
 ## Your text editor (Your mileage may vary)
 
+Yeah, you can use your own text editor but you will definitely get better productivity with either
 
+1. emacs + ess
+2. R studio
 
-## Some recommended R packages
+They are cross platform. Your instructor will use the above two.
 
+Mac OS X binary come with decent code editor. Windows version, well... it has a code editor but you know...
 
+## Some recommended external R packages
 
-
+1. plyr
+2. 
