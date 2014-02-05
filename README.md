@@ -8,8 +8,9 @@ those who are interested in data analysis but with very little experience in R.
 
 1. how to work with the most important R data structures: vector and data frame
 2. how to get data into R from common sources such as csv files
-3. master the SAC (split-apply-combine) strategy to work with data
-4. basic of data viz
+3. how to make data analysable
+4. master the SAC (split-apply-combine) strategy to work with data
+5. basic of data viz
 
 ## This course will not teach you
 
@@ -63,7 +64,7 @@ Mac OS X binary come with decent code editor. Windows version, well... it has a 
 2. plyr
 3. plyr
 
-### Cool, but how can I install a package.
+### Cool, but how can I install package?
 
 Inside R
 
