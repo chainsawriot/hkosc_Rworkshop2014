@@ -1,6 +1,6 @@
 # Hong Kong Open Source Conference - 2014 R workshop
 
-## Target audience
+## Who this workshop is for
 
 those who are interested in data analysis but with very little experience in R.
 
