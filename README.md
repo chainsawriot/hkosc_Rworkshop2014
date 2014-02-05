@@ -68,13 +68,13 @@ Mac OS X binary come with decent code editor. Windows version, well... it has a 
 
 Inside R
 
-```R
+```r
 install.packages("plyr")
 ```
 
 ### And how to use it?
 
-```R
+```r
 require(plyr)
 # or library(plyr)
 ```
