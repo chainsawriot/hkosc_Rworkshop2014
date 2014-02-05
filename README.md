@@ -74,7 +74,7 @@ install.packages("plyr")
 
 ### And how to use it?
 
-```r
+```s
 require(plyr)
 # or library(plyr)
 ```
