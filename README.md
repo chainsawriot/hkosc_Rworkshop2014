@@ -68,7 +68,7 @@ Mac OS X binary come with decent code editor. Windows version, well... it has a 
 
 Inside R
 
-```r
+```s
 install.packages("plyr")
 ```
 
