@@ -23,7 +23,7 @@ those who are interested in data analysis but with very little experience in R.
 
 1. Install R on your computer
 2. Use your own text editor
-3. Install some recommended R packaes
+3. Install some recommended R packages
 
 ## R installation
 
