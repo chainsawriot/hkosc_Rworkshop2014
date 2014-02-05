@@ -82,4 +82,5 @@ require(plyr)
 ## Data Source
 
 1. [Extract of Meteorological Observations for Hong Kong](http://www.hko.gov.hk/wxinfo/pastwx/extract.htm)
-2. [Air Pollution Index / AQHI index archive](http://www.aqhi.gov.hk/en/related-websites/air-pollution-index.html)
+2. [Air Pollution Index archive](http://www.aqhi.gov.hk/en/related-websites/air-pollution-index.html)
+3. [Past AQHI Record for Download](http://www.aqhi.gov.hk/en/aqhi/statistics-of-aqhi/past-aqhi-records.html)
