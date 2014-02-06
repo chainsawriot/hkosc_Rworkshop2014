@@ -29,7 +29,7 @@ those who are interested in data analysis but with very little experience in R.
 
 ### Linux
 
-The easiest way is to your package management, may not be the most update version
+The easiest way is to your package management system, may not be the most update version though.
 
 ```{bash}
 sudo apt-get install r-base-dev
@@ -51,12 +51,12 @@ I can only provide you with [this link](http://cran.rstudio.com/bin/windows/), l
 
 Yeah, you can use your own text editor but you will definitely get better productivity with either
 
-1. emacs + ess
+1. Emacs + ess
 2. R studio
 
-They are cross platform. Your instructor will use the above two.
+They are cross platform. Your instructor will use Emacs.
 
-Mac OS X binary come with decent code editor. Windows version, well... it has a code editor but you know...
+Mac OS X binary of R comes with a decent code editor. Windows version, well... it has a code editor but as always... it sucks.
 
 ## Required external R packages
 
@@ -84,3 +84,4 @@ require(plyr)
 1. [Extract of Meteorological Observations for Hong Kong](http://www.hko.gov.hk/wxinfo/pastwx/extract.htm)
 2. [Air Pollution Index archive](http://www.aqhi.gov.hk/en/related-websites/air-pollution-index.html)
 3. [Past AQHI Record for Download](http://www.aqhi.gov.hk/en/aqhi/statistics-of-aqhi/past-aqhi-records.html)
+
