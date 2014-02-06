@@ -1,4 +1,4 @@
-# Hong Kong Open Source Conference - 2014 R workshop
+# Hong Kong Open Source Conference 2014 - Learn R through Public Data Hacking: Introduction to Practical Data Science
 
 ## Who this workshop is for
 
