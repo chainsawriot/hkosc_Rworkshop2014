@@ -12,7 +12,7 @@ those who are interested in data analysis but with very little experience in R.
 4. master the SAC (split-apply-combine) strategy to work with data
 5. basic of data viz
 
-## This course will not teach you
+## This workshop will not teach you
 
 1. Big data
 2. Machine learning (or any advance stat)
@@ -84,4 +84,9 @@ require(plyr)
 1. [Extract of Meteorological Observations for Hong Kong](http://www.hko.gov.hk/wxinfo/pastwx/extract.htm)
 2. [Air Pollution Index archive](http://www.aqhi.gov.hk/en/related-websites/air-pollution-index.html)
 3. [Past AQHI Record for Download](http://www.aqhi.gov.hk/en/aqhi/statistics-of-aqhi/past-aqhi-records.html)
+
+## Format of the workshop
+
+1. No BS, jump-right-in style of learning. Please install R properly on your laptop before the workshop.
+2. Ask question at anytime
 
