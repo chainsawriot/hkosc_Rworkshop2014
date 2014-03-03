@@ -15,7 +15,7 @@ meat <- hkotables[sapply(hkotables, nrow) > 30 & sapply(hkotables, nrow) < 40]
 meat[[1]]
 
 
-meat[[1]][,1]   
+meat[[1]][,1]
 meat[[2]][,1]
 
 ### filter out rows with 1st column not in the 1-31
@@ -40,6 +40,8 @@ realmeat1[,2:8] <- apply(realmeat1[,2:8], 2, as.numeric)
 realmeat2[,c(2,3,4,5,7)] <- apply(realmeat2[,c(2,3,4,5,7)], 2, as.numeric)
 
 ### I don't know how to code the "trace" rainfall and the winddir, just keep it string
+
+## trace actually meaning < 0.05mm
 
 ### generate date seq
 
@@ -79,4 +81,26 @@ require(plyr)
 
 ### lather, rinse, repeat
 
+
 data2013 <- ldply(1:12, HKOextract, year = 2013, .progress = "text")
+
+# lather, rinse, repeat the lather, rinse, repeat....
+
+weatherdata <- ldply(2005:2013, function(x) ldply(1:12, HKOextract, year = x, .progress = "text"))
+
+write.csv(weatherdata, file = "weatherdata.csv", row.names=FALSE)
+
+require(randomForest)
+
+apply(weatherdata, 2, function(x) sum(is.na(x)))
+
+### not a good idea, better idea is use rfimpute:
+
+weatherdata$sunshine[is.na(weatherdata$sunshine)] <- 0
+weatherdata$evapor[is.na(weatherdata$evapor)] <- 0
+weatherdata$wind.speed[is.na(weatherdata$wind.speed)] <- 0
+
+### but anyway
+
+weather.rf <- randomForest(reduced.vis~pressure+max.temp+mean.temp+relHum+cloud+sunshine+sol.rad+evapor+wind.speed, data=weatherdata, ntree = 1000, importance = TRUE)
+varImpPlot(weather.rf, type=1)
