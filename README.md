@@ -39,7 +39,7 @@ If you need the most updated version, there is a [deb source](http://cran.r-proj
 
 ### Mac OS X
 
-Download the latest version of binary from any cran mirror, such as [r-studio](http://cran.rstudio.com/bin/macosx/).
+Download the latest version of binary from any cran mirror, such as [R Studio](http://cran.rstudio.com/bin/macosx/).
 
 Install the binary by double click it, and [there's no step three](http://www.youtube.com/watch?v=6uXJlX50Lj8).
 
@@ -52,7 +52,7 @@ I can only provide you with [this link](http://cran.rstudio.com/bin/windows/), l
 Yeah, you can use your own text editor but you will definitely get better productivity with either
 
 1. Emacs + ess
-2. R studio
+2. [R Studio](http://www.rstudio.com)
 
 They are cross platform. Your instructor will use Emacs.
 
@@ -61,7 +61,7 @@ Mac OS X binary of R comes with a decent code editor. Windows version, well... i
 ## Required external R packages
 
 1. plyr
-2. plyr
+2. XML
 3. plyr
 
 ### Cool, but how can I install package?

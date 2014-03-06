@@ -12,8 +12,7 @@ sapply(hkotables, nrow) ### good table should be with the nrow around 30
 
 meat <- hkotables[sapply(hkotables, nrow) > 30 & sapply(hkotables, nrow) < 40]
 
-meat[[1]]
-
+meat[[2]]
 
 meat[[1]][,1]
 meat[[2]][,1]
@@ -31,7 +30,7 @@ colnames(realmeat2) <- c("date", "reduced.vis", "sunshine", "sol.rad", "evapor",
 
 realmeat2[,3] ### they are characters(strings)
 
-## covert them to numbers
+## convert them to numbers
 
 realmeat1[,2:8]
 
@@ -86,7 +85,12 @@ data2013 <- ldply(1:12, HKOextract, year = 2013, .progress = "text")
 
 # lather, rinse, repeat the lather, rinse, repeat....
 
-weatherdata <- ldply(2005:2013, function(x) ldply(1:12, HKOextract, year = x, .progress = "text"))
+#weatherdata <- ldply(2005:2013, function(x) ldply(1:12, HKOextract, year = x, .progress = "text"))
+
+weatherdata2 <- ldply(2010:2013, function(x) ldply(1:12, HKOextract, year = x, .progress = "text"))
+
+
+plot(weatherdata$date, weatherdata$mean.temp, type = "l", col = "blue")
 
 write.csv(weatherdata, file = "weatherdata.csv", row.names=FALSE)
 
