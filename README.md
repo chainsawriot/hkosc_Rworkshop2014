@@ -24,7 +24,8 @@ those who are interested in data analysis but with very little experience in R.
 1. Install R on your computer
 2. Use your own text editor
 3. Install some recommended R packages
-4. Download the data and problem set from here.
+4. (RECOMMANDED) Download the data (jan_weather.csv, 201401Eng.csv)
+   and problem set (problemset.R) from here before the workshop.
 
 ## R installation
 
@@ -89,5 +90,3 @@ require(plyr)
 ## Format of the workshop
 
 1. No BS, jump-right-in style of learning. Please install R properly on your laptop before the workshop.
-2. Ask question at anytime
-

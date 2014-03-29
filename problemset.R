@@ -150,6 +150,12 @@ rep(c(1,2,3), 3)
 ###
 
 ### Aim: Study the correlation between AQHI and visibility
+### To make the data align like this
+
+# | Date    |  AQHI    |  Vis       |
+# |---------|----------|------------|
+# | 1       | ??       | ??         |
+# | 2       | ??       | ??         |
 
 
 ###
@@ -178,13 +184,13 @@ head(rubbish)
 ### Quiz #5.3: read in the data as a data frame called AQHIraw, look at the data and each group report one problem of the data. (3 mins)
 ###
 
+KT <- AQHIraw$Kwun.Tong
+KT
+
 ### data cleansing
 ## 1a. Removal of "*"
 ## 1b. Change 10+ to 11
 ## 2. Date
-
-KT <- AQHIraw$Kwun.Tong
-KT
 
 ###
 ### Quiz 6.1: look up gsub and try to remove "*" in "4*"
