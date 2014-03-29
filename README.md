@@ -24,6 +24,7 @@ those who are interested in data analysis but with very little experience in R.
 1. Install R on your computer
 2. Use your own text editor
 3. Install some recommended R packages
+4. Download the data and problem set from here.
 
 ## R installation
 
@@ -61,7 +62,7 @@ Mac OS X binary of R comes with a decent code editor. Windows version, well... i
 ## Required external R packages
 
 1. plyr
-2. XML
+2. plyr
 3. plyr
 
 ### Cool, but how can I install package?
