@@ -157,6 +157,10 @@ rep(c(1,2,3), 3)
 # | 1       | ??       | ??         |
 # | 2       | ??       | ??         |
 
+### AQHI: mean daily AQHI of the mean AQHI of all regions
+### 1. Calculate the mean AQHI of all regions per hours
+### 2. Calculate the mean of mean AQHI of all regions per hours by day
+
 
 ###
 ### Quiz #5.1: read.csv()
@@ -229,13 +233,13 @@ mean(cleanKTnum)
 
 mean(cleansing(AQHIraw$Kwun.Tong))
 
-
-
 head(AQHIraw)
+
+### applying the cleansing function across columns
 
 AQHIraw[1:5,3:17]
 
-apply(AQHIraw[1:5,3:17], 2, cleansing) ### applying the cleansing function across columns
+apply(AQHIraw[1:5,3:17], 2, cleansing)
 
 ### concept of higher order function
 ### function that take another function as argument
@@ -243,9 +247,9 @@ apply(AQHIraw[1:5,3:17], 2, cleansing) ### applying the cleansing function acros
 ### Quiz 7: replace column 3 to 17 in the AQHIraw with the cleansed version
 ### test with
 
-# mean(AQHIraw[,3])
+mean(AQHIraw[,3])
 # ?mean for na.rm and try
-# mean(AQHIraw[,6], na.rm=TRUE)
+mean(AQHIraw[,6], na.rm=TRUE)
 
 ### Quiz 7.1: calculate the mean score for each region
 ### the meaning of ... in apply is the additional argument what will be passed to FUN
@@ -254,6 +258,8 @@ apply(AQHIraw[1:5,3:17], 2, cleansing) ### applying the cleansing function acros
 ### hint: ?rank or ?order
 
 ### Quiz 7.3: consult ?apply and explain what is going on with:
+
+apply(AQHIraw[, 3:17], 1, mean, na.rm = TRUE)
 
 ### Quiz 7.4: put the result from the above command to the AQHIraw data.frame as aqhi and change AQHIraw to AQHI
 
